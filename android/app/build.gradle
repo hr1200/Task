@@ -74,9 +74,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.latest_spa_mobile_reactnative"
+    namespace "com.TaskPostJobApp"
     defaultConfig {
-        applicationId "com.latest_spa_mobile_reactnative"
+        applicationId "com.TaskPostJobApp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

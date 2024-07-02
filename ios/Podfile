@@ -14,7 +14,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'Latest_SPA_Mobile_ReactNative' do
+target 'TaskPostJobApp' do
   config = use_native_modules!
 
   use_react_native!(
@@ -23,7 +23,7 @@ target 'Latest_SPA_Mobile_ReactNative' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'Latest_SPA_Mobile_ReactNativeTests' do
+  target 'TaskPostJobAppTests' do
     inherit! :complete
     # Pods for testing
   end

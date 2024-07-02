@@ -1,4 +1,4 @@
-package com.latest_spa_mobile_reactnative
+package com.TaskPostJobApp
 
 import android.app.Application
 import com.facebook.react.PackageList
