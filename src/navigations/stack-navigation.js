@@ -1,7 +1,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import DrawerNavigation from './drawer-navigation';
-import Splash from '../Screens/Splash';
+import JobPostScreen from '../Screens/JobPostScreen';
+import JobPreviewScreen from '../Screens/JobPreviewScreen';
+import FinalScreen from '../Screens/FinalScreen';
 
 const Stack = createStackNavigator();
 
@@ -11,16 +12,23 @@ function StackNavigation(props) {
       initialRouteName="Splash"
       screenOptions={{headerTitleAlign: 'center'}}>
       <Stack.Screen
-        name="Splash"
-        component={Splash}
+        name="JobPostScreen"
+        component={JobPostScreen}
         options={{headerShown: false}}
       />
 
-      <Stack.Screen
-        name="Dashboard"
-        component={DrawerNavigation}
+<Stack.Screen
+        name="JobPreviewScreen"
+        component={JobPreviewScreen}
         options={{headerShown: false}}
       />
+
+<Stack.Screen
+        name="FinalScreen"
+        component={FinalScreen}
+        options={{headerShown: false}}
+      />
+
     </Stack.Navigator>
   );
 }

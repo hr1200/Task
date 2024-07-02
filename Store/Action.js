@@ -1,4 +1,4 @@
-import {USERDATA, ALERTPOPUPMSG, LOADER} from './ActionType';
+import {USERDATA, } from './ActionType';
 
 export const UserData = data => {
   return {
@@ -7,16 +7,4 @@ export const UserData = data => {
   };
 };
 
-export const Loader = data => {
-  return {
-    type: LOADER,
-    payload: data,
-  };
-};
 
-export const AlertPopupMsg = data => {
-  return {
-    type: ALERTPOPUPMSG,
-    payload: data,
-  };
-};
